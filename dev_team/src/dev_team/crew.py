@@ -6,8 +6,8 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
 @CrewBase
-class TestP():
-    """TestP crew"""
+class DevTeam():
+    """DevTeam crew"""
 
     agents: list[BaseAgent]
     tasks: list[Task]
@@ -50,7 +50,7 @@ class TestP():
 
     @crew
     def crew(self) -> Crew:
-        """Creates the TestP crew"""
+        """Creates the DevTeam crew"""
         # To learn how to add knowledge sources to your crew, check out the documentation:
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
