@@ -1,16 +1,21 @@
 interview_task:
   description: >
-    Ask the user clarifying questions in the terminal about their vision for the project: {topic}.
-    Do not proceed until you have a comprehensive understanding of the requirements.
+    Start a conversation in the terminal with the user to understand their vision 
+    for the topic: {topic}. 
+    Ask clarifying questions about the features, target audience, technology stack, 
+    and any specific constraints. 
+    Crucial: You MUST wait for human input in the terminal before moving forward.
+    Do not stop the interview until you have a comprehensive understanding.
   expected_output: >
-    A detailed summary of the gathered requirements.
+    A summary of the technical requirements gathered through the interview.
   agent: requirement_analyst
 
 document_task:
   description: >
-    Based on the interview context, generate two files: 
-    1. 'requirements.md' (Software Requirement Specification)
-    2. 'plan.md' (Implementation Plan)
+    Using the context from the interview session, generate two professional 
+    markdown files:
+    1. 'requirements.md': A complete Software Requirement Specification (SRS).
+    2. 'plan.md': A step-by-step implementation plan for the development team.
   expected_output: >
-    The files requirements.md and plan.md are created with detailed content.
+    The files 'requirements.md' and 'plan.md' are created with high-quality content.
   agent: requirement_analyst

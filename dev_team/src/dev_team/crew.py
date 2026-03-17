@@ -5,6 +5,7 @@ from crewai.project import CrewBase, agent, crew, task
 class DevTeam():
     """DevTeam crew"""
 
+    # These point to the relative yaml config paths
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
 
@@ -13,6 +14,7 @@ class DevTeam():
         return Agent(
             config=self.agents_config['requirement_analyst'],
             verbose=True,
+            # CRITICAL: This enables terminal interaction
             human_in_the_loop=True
         )
 

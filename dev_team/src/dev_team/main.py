@@ -16,6 +16,7 @@ def run():
     }
 
     try:
+        # Crucial: Call kickoff on the crew defined in the current package
         DevTeam().crew().kickoff(inputs=inputs)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
