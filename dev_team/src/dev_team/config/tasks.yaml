@@ -1,21 +1,22 @@
 interview_task:
-  description: >
-    Start a conversation in the terminal with the user to understand their vision 
-    for the topic: {topic}. 
-    Ask clarifying questions about the features, target audience, technology stack, 
-    and any specific constraints. 
-    Crucial: You MUST wait for human input in the terminal before moving forward.
-    Do not stop the interview until you have a comprehensive understanding.
-  expected_output: >
-    A summary of the technical requirements gathered through the interview.
-  agent: requirement_analyst
+    description: >
+        Start a conversation in the terminal with the user to understand their vision 
+        for the topic: {topic}. 
+        Ask clarifying questions about the features, target audience, technology stack, 
+        and any specific constraints. 
+        Crucial: You MUST wait for human input in the terminal before moving forward.
+        Do not stop the interview until you have a comprehensive understanding.
+    expected_output: >
+        A summary of the technical requirements gathered through the interview.
+    agent: requirement_analyst
+    human_input: true
 
 document_task:
-  description: >
-    Using the context from the interview session, generate two professional 
-    markdown files:
-    1. 'requirements.md': A complete Software Requirement Specification (SRS).
-    2. 'plan.md': A step-by-step implementation plan for the development team.
-  expected_output: >
-    The files 'requirements.md' and 'plan.md' are created with high-quality content.
-  agent: requirement_analyst
+    description: >
+        Using the context from the interview session, generate two professional 
+        markdown files:
+        1. 'requirements.md': A complete Software Requirement Specification (SRS).
+        2. 'plan.md': A step-by-step implementation plan for the development team.
+    expected_output: >
+        The files 'requirements.md' and 'plan.md' are created with high-quality content.
+    agent: requirement_analyst
