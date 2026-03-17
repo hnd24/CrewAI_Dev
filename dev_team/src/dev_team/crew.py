@@ -17,15 +17,15 @@ class DevTeam():
         )
 
     @task
-    def interview_user_task(self) -> Task:
+    def interview_task(self) -> Task:
         return Task(
-            config=self.tasks_config['interview_user_task'],
+            config=self.tasks_config['interview_task'],
         )
 
     @task
-    def generate_docs_task(self) -> Task:
+    def document_task(self) -> Task:
         return Task(
-            config=self.tasks_config['generate_docs_task'],
+            config=self.tasks_config['document_task'],
         )
 
     @crew

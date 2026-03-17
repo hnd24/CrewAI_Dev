@@ -1,19 +1,16 @@
-interview_user_task:
+interview_task:
   description: >
-    Ask the user questions in the terminal to clarify features, tech stack, 
-    and goals for the project: {topic}. 
+    Ask the user clarifying questions in the terminal about their vision for the project: {topic}.
     Do not proceed until you have a comprehensive understanding of the requirements.
   expected_output: >
-    A detailed summary of the gathered requirements from the user.
+    A detailed summary of the gathered requirements.
   agent: requirement_analyst
 
-generate_docs_task:
+document_task:
   description: >
-    Use the context gathered from the interview to create two specific 
-    documents:
-    1. 'requirements.md': A Software Requirement Specification (SRS) document.
-    2. 'plan.md': A step-by-step implementation plan for the development team.
-    Both documents must be professional, detailed, and formatted in markdown.
+    Based on the interview context, generate two files: 
+    1. 'requirements.md' (Software Requirement Specification)
+    2. 'plan.md' (Implementation Plan)
   expected_output: >
-    Two markdown files generated: requirements.md and plan.md.
+    The files requirements.md and plan.md are created with detailed content.
   agent: requirement_analyst
